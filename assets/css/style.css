@@ -803,8 +803,6 @@ section.modal-sec div#exampleModal .modal-dialog section#contact .container {
 .vactor-image img.vactor-image-vc {
   width: 70%;
 }
-
-
 /* Loader start */
 #formLoader{
   position: fixed;
@@ -819,10 +817,9 @@ section.modal-sec div#exampleModal .modal-dialog section#contact .container {
   display: inline-block;
   position: relative;
   border: 3px solid;
-  border-color: #FFF #FFF transparent transparent;
+  border-color: #091057 #FFF #091057 transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-
 }
 .loader::after,
 .loader::before {
@@ -835,7 +832,7 @@ section.modal-sec div#exampleModal .modal-dialog section#contact .container {
   bottom: 0;
   margin: auto;
   border: 3px solid;
-  border-color: transparent transparent #FF3D00 #FF3D00;
+  border-color: transparent transparent #ffc107 #ffc107;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -877,5 +874,23 @@ section.modal-sec div#exampleModal .modal-dialog section#contact .container {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   z-index: 9998; /* Behind loader */
 }
-
 /* Loader end */
+/* Pagination style start  */
+li.page-item.active a.page-link {
+  background: var(--yellow-text);
+  border: 1px solid var(--yellow-text);
+  color: var(--background-color);
+}
+li.page-item a.page-link {
+  color: var(--darkBlue-text);
+}
+.page-item:first-child .page-link{
+  color: var(--yellow-text);
+}
+.page-item:last-child .page-link{
+  color: var(--yellow-text);
+}
+.form-all-vc{
+  overflow-x: auto;
+}
+/* Pagination style end */
